@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_layout"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/guideFragment"
+        android:name="com.example.pchub.Fragment.GuideFragment"
+        android:label="GuideFragment" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.pchub.Fragment.UserFragment"
+        android:label="UserFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.pchub.Fragment.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_psu2"
+            app:destination="@id/psu2" />
+        <action
+            android:id="@+id/action_homeFragment_to_motherboard2"
+            app:destination="@id/motherboard2" />
+        <action
+            android:id="@+id/action_homeFragment_to_cpu2"
+            app:destination="@id/cpu2" />
+        <action
+            android:id="@+id/action_homeFragment_to_graphics2"
+            app:destination="@id/graphics2" />
+        <action
+            android:id="@+id/action_homeFragment_to_ssd2"
+            app:destination="@id/ssd" />
+    </fragment>
+    <fragment
+        android:id="@+id/cpu2"
+        android:name="com.example.pchub.Fragment.cpu"
+        android:label="fragment_cpu"
+        tools:layout="@layout/fragment_cpu" />
+    <fragment
+        android:id="@+id/graphics2"
+        android:name="com.example.pchub.Fragment.graphics"
+        android:label="fragment_graphics"
+        tools:layout="@layout/fragment_graphics" />
+    <fragment
+        android:id="@+id/psu2"
+        android:name="com.example.pchub.Fragment.psu"
+        android:label="fragment_psu"
+        tools:layout="@layout/fragment_psu" />
+    <fragment
+        android:id="@+id/motherboard2"
+        android:name="com.example.pchub.Fragment.motherboard"
+        android:label="fragment_motherboard"
+        tools:layout="@layout/fragment_motherboard" />
+    <fragment
+        android:id="@+id/ssd"
+        android:name="com.example.pchub.Fragment.ssd"
+        android:label="fragment_ssd"
+        tools:layout="@layout/fragment_ssd" />
+    <activity
+        android:id="@+id/frontPage"
+        android:name="com.example.pchub.Activities.FrontPage"
+        android:label="activity_front_page"
+        tools:layout="@layout/activity_front_page" />
+    <activity
+        android:id="@+id/startup"
+        android:name="com.example.pchub.Activities.Startup"
+        android:label="activity_startup"
+        tools:layout="@layout/activity_startup" />
+    <activity
+        android:id="@+id/login"
+        android:name="com.example.pchub.Activities.Login"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/register"
+        android:name="com.example.pchub.Activities.Register"
+        android:label="Register" />
+</navigation>

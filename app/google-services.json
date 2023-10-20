@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "240498842976",
+    "project_id": "pchub-bd674",
+    "storage_bucket": "pchub-bd674.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240498842976:android:a0bfdc263f00866db31205",
+        "android_client_info": {
+          "package_name": "com.example.pchub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZzhN-R90EkrL3l7B529N746buzDWlP6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PCHUB</string>
+    <string name="PCHub1">PCHub\nFor\nDummies</string>
+    <string name="Welcome">"Welcome to \n PCHub for Dummies"</string>
+    <string name="Welcome1">I dunno wtf do i put here yet\nthis a placeholder for now lmao</string>
+    <string name="Purpose">Our app is about guide for pc builds, and some recommended packagees\nthat fits your budget while looking for some hot af gaming rigs that\ncan burn your pockets and leave you in debt.</string>
+    <string name="TextRegister">Let\'s Get Started\nFill up the Information below.</string>
+    <string name="full_name">Full Name</string>
+    <string name="username">Email</string>
+    <string name="Pass">Password</string>
+    <string name="Pass2">Confirm Password</string>
+    <string name="RegButton">Register</string>
+    <string name="Choice">What do you want to do?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
