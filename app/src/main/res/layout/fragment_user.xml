@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:background="@color/app_theme"
         android:gravity="center"
-        android:text="User Section"
+        android:text="Cart Section"
         android:textSize="45sp" />
 
 </LinearLayout>

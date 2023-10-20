@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">PCHUB</string>
     <string name="PCHub1">PCHub\nFor\nDummies</string>
-    <string name="Welcome">"Welcome to \n PCHub for Dummies"</string>
+    <string name="Welcome">"Welcome to \n PCHub for Dummies \n Placeholder startup"</string>
     <string name="Welcome1">I dunno wtf do i put here yet\nthis a placeholder for now lmao</string>
-    <string name="Purpose">Our app is about guide for pc builds, and some recommended packagees\nthat fits your budget while looking for some hot af gaming rigs that\ncan burn your pockets and leave you in debt.</string>
+    <string name="Purpose">(not final startup) \n Our app is about guide for pc builds, and some recommended packagees\nthat fits your budget while looking for some hot af gaming rigs that\ncan burn your pockets and leave you in debt.</string>
     <string name="TextRegister">Let\'s Get Started\nFill up the Information below.</string>
     <string name="full_name">Full Name</string>
     <string name="username">Email</string>

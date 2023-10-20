@@ -14,10 +14,9 @@ class graphics : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val backbutton: ImageView = view.findViewById(R.id.back) // Replace with the actual ID of your ImageView
+        val backbutton: ImageView = view.findViewById(R.id.back)
 
         backbutton.setOnClickListener {
-            // Pop the back stack to navigate back to the HomeFragment
             requireActivity().supportFragmentManager.popBackStack()
         }
     }
