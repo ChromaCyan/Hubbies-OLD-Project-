@@ -8,7 +8,14 @@
     <fragment
         android:id="@+id/guideFragment"
         android:name="com.example.pchub.Fragment.GuideFragment"
-        android:label="GuideFragment" />
+        android:label="GuideFragment" >
+        <action
+            android:id="@+id/action_guideFragment_to_assembly"
+            app:destination="@id/assembly" />
+        <action
+            android:id="@+id/action_guideFragment_to_recommendations"
+            app:destination="@id/recommendations" />
+    </fragment>
     <fragment
         android:id="@+id/userFragment"
         android:name="com.example.pchub.Fragment.UserFragment"
@@ -77,4 +84,62 @@
         android:id="@+id/register"
         android:name="com.example.pchub.Activities.Register"
         android:label="Register" />
+    <fragment
+        android:id="@+id/assembly"
+        android:name="com.example.pchub.assembly"
+        android:label="assembly" >
+        <action
+            android:id="@+id/action_assembly_to_assemstep1"
+            app:destination="@id/assemstep1" />
+        <action
+            android:id="@+id/action_assembly_to_assemstep2"
+            app:destination="@id/assemstep2" />
+        <action
+            android:id="@+id/action_assembly_to_assemstep3"
+            app:destination="@id/assemstep3" />
+        <action
+            android:id="@+id/action_assembly_to_assemstep4"
+            app:destination="@id/assemstep4" />
+        <action
+            android:id="@+id/action_assembly_to_assemstep5"
+            app:destination="@id/assemstep5" />
+        <action
+            android:id="@+id/action_assembly_to_assemstep6"
+            app:destination="@id/assemstep6" />
+        <action
+            android:id="@+id/action_assembly_to_assemstep7"
+            app:destination="@id/assemstep7" />
+    </fragment>
+    <fragment
+        android:id="@+id/recommendations"
+        android:name="com.example.pchub.recommendations"
+        android:label="recommendations" />
+    <fragment
+        android:id="@+id/assemstep1"
+        android:name="com.example.pchub.assemstep1"
+        android:label="assemstep1" />
+    <fragment
+        android:id="@+id/assemstep2"
+        android:name="com.example.pchub.assemstep2"
+        android:label="assemstep2" />
+    <fragment
+        android:id="@+id/assemstep3"
+        android:name="com.example.pchub.assemstep3"
+        android:label="assemstep3" />
+    <fragment
+        android:id="@+id/assemstep4"
+        android:name="com.example.pchub.assemstep4"
+        android:label="assemstep4" />
+    <fragment
+        android:id="@+id/assemstep5"
+        android:name="com.example.pchub.assemstep5"
+        android:label="assemstep5" />
+    <fragment
+        android:id="@+id/assemstep6"
+        android:name="com.example.pchub.assemstep6"
+        android:label="assemstep6" />
+    <fragment
+        android:id="@+id/assemstep7"
+        android:name="com.example.pchub.assemstep7"
+        android:label="assemstep7" />
 </navigation>

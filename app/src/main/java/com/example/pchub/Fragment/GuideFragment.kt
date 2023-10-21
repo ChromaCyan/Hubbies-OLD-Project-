@@ -5,24 +5,39 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.cardview.widget.CardView
+import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.pchub.R
+import com.example.pchub.assembly
+import com.example.pchub.recommendations
 
 
 class GuideFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val assem: Button = view.findViewById(R.id.first_choice)
+        val recommend: Button = view.findViewById(R.id.second_choice)
 
-        val step1: CardView = view.findViewById(R.id.Step1_CardView)
-        val step2: CardView = view.findViewById(R.id.Step2_CardView)
-        val step3: CardView = view.findViewById(R.id.Step3_CardView)
-        val step4: CardView = view.findViewById(R.id.Step4_CardView)
-        val step5: CardView = view.findViewById(R.id.Step5_CardView)
-        val step6: CardView = view.findViewById(R.id.Step6_CardView)
-        val step7: CardView = view.findViewById(R.id.Step7_CardView)
+        assem.setOnClickListener{
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(
+                R.id.fragmentcontainer,
+                assembly()
+            )
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
 
+        recommend.setOnClickListener{
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(
+                R.id.fragmentcontainer,
+                recommendations()
+            )
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
     }
 
     override fun onCreateView(
