@@ -13,6 +13,7 @@
     <string name="Choice">What do you want to do?</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Welcome_Intro">Welcome to the guiding window where we have provided you a step-by-step tutorial oh building a PC.</string>
+    <string name="Welcome_Intro2">Welcome to the guiding window where we have provided you a step-by-step tutorial on choosing a PC parts.</string>
     <string name="step_1">Step 1\n(Preparation)</string>
     <string name="step_2">Step 2\n(Installing CPU)</string>
     <string name="step_3">Step 3\n(Installing RAM)</string>
