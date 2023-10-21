@@ -11,6 +11,27 @@
     <string name="Pass2">Confirm Password</string>
     <string name="RegButton">Register</string>
     <string name="Choice">What do you want to do?</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Welcome_Intro">Welcome to the guiding window where we have provided you a step-by-step tutorial oh building a PC.</string>
+    <string name="step_1">Step 1\n(Preparation)</string>
+    <string name="step_2">Step 2\n(Installing CPU)</string>
+    <string name="step_3">Step 3\n(Installing RAM)</string>
+    <string name="step_4">Step 4\n(Installing Motherboard)</string>
+    <string name="step_5">Step 5\n(Installing Power Supply)</string>
+    <string name="step_6">Step 6\n(Installing SSD)</string>
+    <string name="step_7">Step 7\n(Installing GPU)</string>
+    <string name="description">"    Make sure you have all the necessary hardware components for your build, including the CPU, motherboard, RAM, graphics card, storage drives, power supply, and any additional peripherals you want to install."</string>
+    <string name="description2">"   Ensure that all your components are compatible with each other and fit within your chosen PC case. Verify that the CPU socket matches the motherboard, the RAM is compatible, and the power supply provides enough wattage for your components."</string>
+    <string name="installcpu">"   Before you touch the CPU, ground yourself by wearing the anti-static wristband or by touching a grounded metal surface to discharge any static electricity."</string>
+    <string name="installcpu2">"   Make sure the Intel CPU must go to the Intel Motherboards(B460, B560, and Z590). And it also depends what DDR your motherboard is. So does in the AMD CPU in AMD Motherboards(B450, B550, B560, and X570)"</string>
+    <string name="installram">"   On your motherboard, identify the RAM slots. These are usually long, rectangular slots grouped together near the CPU socket. Gently insert the RAM module into the slot at a slight angle, then press down evenly on both ends until the retention clips click into place."</string>
+    <string name="installram2">"   Also, make sure to know if your Motherboard is DDR3, DDR4 or DDR5. Because the most important part of this tutorial is the compatibility of your PC Parts."</string>
+    <string name="installmobo">"   Once the motherboard is in place, use the provided screws (usually included with the case or motherboard) to secure it to the standoffs. Start by loosely screwing in each corner screw, and then gradually tighten them in a crisscross pattern to ensure even pressure. Be careful not to overtighten, as this can damage the motherboard."</string>
+    <string name="installmobo2">"   Check your Motherboard's Size. And ATX case can fit all of the sizes of the Motherboards. An mATX can only fit mATX and ITX motherboards. And ITX motherboards are the smallest."</string>
+    <string name="installpsu">"   Place the PSU in the designated area with the fan facing downward (if your case has a PSU shroud with ventilation) or upward, depending on your case's design and airflow requirements. The PSU fan should face the inside of the case to help expel hot air."</string>
+    <string name="installpsu2">"   A PSU or Power Supply Unit is the hardest to trust if it is rated or not. Because some brands of the PSU is not 80+ certified, or some say it is True Rated. The brand I suggest is Corsair, Seasonic, Coolermaster and FSP."</string>
+    <string name="installssd">"   For SATA SSDs, connect one end of the SATA data cable to the SSD and the other end to an available SATA port on the motherboard. Attach the SSD to the drive bay using screws. In many cases, there are mounting holes for securing the SSD in place. All Storages are Compatible."</string>
+    <string name="installssd2">"   For NVMe SSDs (M.2 SSDs), gently insert the NVMe SSD into the M.2 slot at a slight angle (about 30–45 degrees) and then press it down until it's seated firmly. It will fasten in place with a screw. Once the NVMe SSD is securely installed, close the case and secure it with screws."</string>
+    <string name="installgpu">"   Align the graphics card with the PCIe slot. Carefully insert it into the slot. Make sure it's properly seated and that the PCIe connector at the bottom of the card fits securely into the slot. You may need to gently press down until it clicks into place. Attach the graphics card to the case using screws. The case should have corresponding holes and mounting points. Tighten the screws to secure the card in place. Be careful not to overtighten."</string>
+    <string name="installgpu2">"   Ensure that the graphics card is recognized and working correctly. You can do this by checking your system information or running a graphics-intensive application or game. And congratulations, you built up your first system unit! Keep Calm and Enjoy to play the game!"</string>
 </resources>
