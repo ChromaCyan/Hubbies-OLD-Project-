@@ -3,6 +3,7 @@ package com.example.pchub.Activities
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import android.os.Bundle
+import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.ImageView
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
@@ -16,8 +17,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-        val cpuclick : ImageView
         val bottomNavigation: MeowBottomNavigation = findViewById(R.id.bottomNavigation)
         addFragment(HomeFragment.newInstance())
         bottomNavigation.show(1)

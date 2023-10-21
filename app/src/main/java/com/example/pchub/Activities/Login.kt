@@ -43,6 +43,7 @@ class Login : AppCompatActivity() {
                     if(isSuccess){
                         val intent = Intent(this, FrontPage::class.java)
                         startActivity(intent)
+                        finish()
                     }else{
                         Toast.makeText(this, "Invalid email or password!", Toast.LENGTH_SHORT).show()
                     }

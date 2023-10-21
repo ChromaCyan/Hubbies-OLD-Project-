@@ -50,12 +50,12 @@
 
             <TextView
                 android:id="@+id/textView5"
+                style="@style/h2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="100dp"
                 android:layout_marginEnd="50dp"
-                style="@style/h2"
                 android:layout_marginBottom="250dp"
                 android:text="@string/Purpose"
                 android:textAlignment="center"
