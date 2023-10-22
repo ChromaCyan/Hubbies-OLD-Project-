@@ -1,6 +1,9 @@
 package com.example.pchub.Fragment
 
+import android.app.Activity
 import android.content.Intent
+import android.net.Uri
+import com.example.pchub.data.AppDatabase
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,59 +12,88 @@ import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageView
 import com.example.pchub.R
-import android.app.Activity
-//import com.example.pchub.data.ProductEntity
+import android.widget.Button
+import com.example.pchub.dao.Product
+import android.widget.Toast
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 
 class sell : Fragment() {
 
-    private var imagePath: String? = null
+    private lateinit var productNameEditText: EditText
+    private lateinit var productPriceEditText: EditText
+    private lateinit var productDescriptionEditText: EditText
+    private lateinit var addImageButton: Button
+    private var imageUri: Uri? = null
+    private lateinit var appDatabase: AppDatabase
+    private lateinit var sellButton: Button
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val backbutton: ImageView = view.findViewById(R.id.back) // Replace with the actual ID of your ImageView
+        productNameEditText = view.findViewById(R.id.SellerProductName)
+        productPriceEditText = view.findViewById(R.id.SellerProductPrice)
+        productDescriptionEditText = view.findViewById(R.id.SellerProductDescription)
+        addImageButton = view.findViewById(R.id.addImageButton)
+        sellButton = view.findViewById(R.id.sellbutton)
 
-        backbutton.setOnClickListener {
-            // Pop the back stack to navigate back to the HomeFragment
-            requireActivity().supportFragmentManager.popBackStack()
+        addImageButton.setOnClickListener {
+            val imagePickerIntent = Intent(Intent.ACTION_PICK)
+            imagePickerIntent.type = "image/*"
+            startActivityForResult(imagePickerIntent, IMAGE_PICKER_REQUEST_CODE)
         }
+
+        sellButton.setOnClickListener {
+            val productName = productNameEditText.text.toString()
+            val productPrice = productPriceEditText.text.toString()
+            val productDescription = productDescriptionEditText.text.toString()
+
+            if (productName.isBlank() || productPrice.isBlank() || productDescription.isBlank()) {
+                showToast("Please fill in all fields.")
+            } else {
+                val product = Product(0, productName, productPrice, productDescription, imageUri.toString())
+
+                Thread {
+                    val productDao = appDatabase.productDao()
+                    productDao.insertProduct(product)
+
+                    val existingProduct = productDao.getAllProducts(productName)
+
+                    requireActivity().runOnUiThread {
+                        if (existingProduct != null) {
+                            showToast("Data saved successfully!")
+
+                            productNameEditText.text.clear()
+                            productPriceEditText.text.clear()
+                            productDescriptionEditText.text.clear()
+                            imageUri = null
+                        } else {
+                            showToast("Failed to save data. Product does not exist in the database.")
+                        }
+                    }
+                }.start()
+            }
+        }
+
+
+        appDatabase = AppDatabase.getInstance(requireContext())
     }
 
-    fun onAddImageClick(view: View) {
-        val intent = Intent(Intent.ACTION_GET_CONTENT)
-        intent.type = "image/*"
-        startActivityForResult(intent, IMAGE_PICKER_REQUEST_CODE)
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        val productName = view?.findViewById<EditText>(R.id.SellerProductName)?.text.toString()
-        val Productprice = view?.findViewById<EditText>(R.id.SellerProductPrice)?.text.toString()
-        val descriptionTxt = view?.findViewById<EditText>(R.id.SellerProductDescription)?.text.toString()
-
-        val price = Productprice.toDoubleOrNull() ?: 0.0
-
-        //val product = ProductEntity(name= productName, price = price, description = descriptionTxt, imagePath = imagePath)
-
-
+    private fun showToast(message: String) {
+        Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-
         if (requestCode == IMAGE_PICKER_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
-            val selectedImage = data?.data
-            // Get the selected image's file path
-            imagePath = selectedImage?.path
+            val selectedImageUri = data?.data
+            imageUri = selectedImageUri // Store the selected image URI
+
+            addImageButton.text = "Image Added!"
+
         }
     }
-
-    companion object {
-        private const val IMAGE_PICKER_REQUEST_CODE = 1
-    }
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -70,4 +102,9 @@ class sell : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_sell, container, false)
     }
+
+    companion object {
+        private const val IMAGE_PICKER_REQUEST_CODE = 1
+    }
 }
+

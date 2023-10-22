@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PCHUB</string>
+    <string name="PCHub1">PCHub\nFor\nDummies</string>
+    <string name="Welcome">"Welcome to \n PCHub for Dummies"</string>
+    <string name="Welcome1">I dunno wtf do i put here yet\nthis a placeholder for now lmao</string>
+    <string name="Purpose">Our app is about guide for pc builds, and some recommended packagees\nthat fits your budget while looking for some hot af gaming rigs that\ncan burn your pockets and leave you in debt.</string>
+    <string name="TextRegister">Let\'s Get Started\nFill up the Information below.</string>
+    <string name="full_name">Full Name</string>
+    <string name="username">Email</string>
+    <string name="Pass">Password</string>
+    <string name="Pass2">Confirm Password</string>
+    <string name="RegButton">Register</string>
+    <string name="Choice">What do you want to do?</string>
+    \\headings for the slide screen
+    <string name="heading_one">Quick &amp; Easy Payments</string>
+    <string name="heading_two">Instant Notifications</string>
+    <string name="heading_three">Cashless Payment</string>
+    <string name="heading_fourth">Pay Anywhere</string>
+    \\Description part of the headings i think
+    <string name="desc_one">Grow your Business By Accepting Card Payments with The New Card Reader</string>
+    <string name="desc_two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="desc_three">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="desc_fourth">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+
+</resources>
+

@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -23,7 +22,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/cyan"
+        android:background="@color/startup_color"
         android:orientation="horizontal"
         android:padding="12dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +45,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Recommendations"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -65,18 +64,21 @@
             android:id="@+id/scrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:overScrollMode="never" >
+            android:overScrollMode="never">
 
             <LinearLayout
                 android:id="@+id/linear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/Guide_Title"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:backgroundTint="@color/white"
                     tools:ignore="TextSizeCheck">
 
@@ -85,7 +87,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Guide"
+                        android:text="Choosing a PC Guide"
                         android:textColor="@color/black"
                         android:textSize="32sp"
                         android:textStyle="bold" />
@@ -94,7 +96,10 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/Guide_Description"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
                     android:backgroundTint="@color/white"
                     tools:ignore="TextSizeCheck">
 
@@ -103,28 +108,23 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         style="@style/h3"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="@string/recommandation_welcome"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/Welcome_Intro2"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
-
                 </androidx.cardview.widget.CardView>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:background="@color/white">
-
-                </View>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/Step1_CardView"
                     android:layout_width="match_parent"
                     android:layout_height="78dp"
-                    android:backgroundTint="@color/cyan"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="@color/app_theme"
                     tools:ignore="TextSizeCheck">
 
                     <TextView
@@ -132,26 +132,21 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:fontFamily="monospace"
-                        android:text="@string/cpu"
+                        android:text="@string/step_1"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="19sp"
                         android:textStyle="bold" />
-
                 </androidx.cardview.widget.CardView>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"
-                    android:background="@color/white">
-
-                </View>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/Step2_CardView"
                     android:layout_width="match_parent"
                     android:layout_height="78dp"
-                    android:backgroundTint="@color/cyan"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="@color/app_theme"
                     tools:ignore="TextSizeCheck">
 
                     <TextView
@@ -159,55 +154,51 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:fontFamily="monospace"
-                        android:text="@string/motherboard"
+                        android:text="@string/step_2"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="19sp"
                         android:textStyle="bold" />
-
                 </androidx.cardview.widget.CardView>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"
-                    android:background="@color/white">
-
-                </View>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/Step3_CardView"
                     android:layout_width="match_parent"
                     android:layout_height="78dp"
-                    android:backgroundTint="@color/cyan"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="@color/app_theme"
                     tools:ignore="TextSizeCheck">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="133dp"
+                        android:layout_height="132dp"
+                        android:layout_marginStart="25dp"
+                        android:rotation="-40"
+                        tools:srcCompat="@drawable/img" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginStart="1dp"
-                        android:layout_marginEnd="1dp"
                         android:fontFamily="monospace"
-                        android:text="@string/graphics"
+                        android:text="@string/step_3"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="19sp"
                         android:textStyle="bold" />
-
                 </androidx.cardview.widget.CardView>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"
-                    android:background="@color/white">
-
-                </View>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/Step4_CardView"
                     android:layout_width="match_parent"
                     android:layout_height="78dp"
-                    android:backgroundTint="@color/cyan"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="@color/app_theme"
                     tools:ignore="TextSizeCheck">
 
                     <TextView
@@ -215,26 +206,21 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:fontFamily="monospace"
-                        android:text="@string/psu"
+                        android:text="@string/step_4"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="19sp"
                         android:textStyle="bold" />
-
                 </androidx.cardview.widget.CardView>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"
-                    android:background="@color/white">
-
-                </View>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/Step5_CardView"
                     android:layout_width="match_parent"
                     android:layout_height="78dp"
-                    android:backgroundTint="@color/cyan"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="@color/app_theme"
                     tools:ignore="TextSizeCheck">
 
                     <TextView
@@ -242,26 +228,21 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:fontFamily="monospace"
-                        android:text="@string/ssd"
+                        android:text="@string/step_5"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="19sp"
                         android:textStyle="bold" />
-
                 </androidx.cardview.widget.CardView>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"
-                    android:background="@color/white">
-
-                </View>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/Step6_CardView"
                     android:layout_width="match_parent"
                     android:layout_height="78dp"
-                    android:backgroundTint="@color/cyan"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="@color/app_theme"
                     tools:ignore="TextSizeCheck">
 
                     <TextView
@@ -269,26 +250,21 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:fontFamily="monospace"
-                        android:text="@string/ram"
+                        android:text="@string/step_6"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="19sp"
                         android:textStyle="bold" />
-
                 </androidx.cardview.widget.CardView>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"
-                    android:background="@color/white">
-
-                </View>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/Step7_CardView"
                     android:layout_width="match_parent"
                     android:layout_height="78dp"
-                    android:backgroundTint="@color/cyan"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="@color/app_theme"
                     tools:ignore="TextSizeCheck">
 
                     <TextView
@@ -296,20 +272,12 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:fontFamily="monospace"
-                        android:text="@string/pc_case"
+                        android:text="@string/step_7"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="19sp"
                         android:textStyle="bold" />
-
                 </androidx.cardview.widget.CardView>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@color/white">
-
-                </View>
 
             </LinearLayout>
 

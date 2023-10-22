@@ -35,25 +35,17 @@
     <string name="installssd2">"   For NVMe SSDs (M.2 SSDs), gently insert the NVMe SSD into the M.2 slot at a slight angle (about 30–45 degrees) and then press it down until it's seated firmly. It will fasten in place with a screw. Once the NVMe SSD is securely installed, close the case and secure it with screws."</string>
     <string name="installgpu">"   Align the graphics card with the PCIe slot. Carefully insert it into the slot. Make sure it's properly seated and that the PCIe connector at the bottom of the card fits securely into the slot. You may need to gently press down until it clicks into place. Attach the graphics card to the case using screws. The case should have corresponding holes and mounting points. Tighten the screws to secure the card in place. Be careful not to overtighten."</string>
     <string name="installgpu2">"   Ensure that the graphics card is recognized and working correctly. You can do this by checking your system information or running a graphics-intensive application or game. And congratulations, you built up your first system unit! Keep Calm and Enjoy to play the game!"</string>
-    <string name="recommandation_welcome">Here is where we will give you guidance in choosing parts for your PC build and give you some of our recommended parts and why are they on our recommendations.</string>
 
-    <string name="cpu">Should you pick AMD or Intel?</string>
-    <string name="motherboard">What motherboard should you pick?</string>
-    <string name="graphics">What to know about graphics card and should you buy one?</string>
-    <string name="psu">Pick the correct Power Supply Unit for your setup</string>
-    <string name="ssd">Types of SSD and which one should you buy</string>
-    <string name="ram">How many capacity and Hz or RAM should you pick?</string>
-    <string name="pc_case">What casing and what size suites your taste?</string>
-
-    <string name="cpu_recommendation1">"  Welcome to our CPU recommendation guide where here you will witness a comparison between AMD and Intel. When choosing a CPU, "</string>
-    <string name="cpu_recommendation2">"  "</string>
-    <string name="cpu_recommendation3">"  "</string>
-
-    <string name="motherboards_recommendation">qwer</string>
-    <string name="graphics_recommendation">qwe</string>
-    <string name="psu_recommendation">qwer</string>
-    <string name="cooler_recommendation">qwer</string>
-    <string name="ssd_recommendation">qwer</string>
-    <string name="pc_case_recommendation">qwer</string>
+    \\headings for the slide screen
+    <string name="heading_one">Welcome to PCHub\nfor Dummies</string>
+    <string name="heading_two">Easy access in your pocket</string>
+    <string name="heading_three">Assembly Guides and Recommendations Computer Parts</string>
+    <string name="heading_fourth">Let\'s get started!</string>
+    \\Description part of the headings i think
+    <string name="desc_one">App that can show pc assembly guide and  recommended pc parts which you can buy on our app!</string>
+    <string name="desc_two">Convenient app that can fit in your pocket!</string>
+    <string name="desc_three">Guides and Recommendation that you can check out</string>
+    <string name="desc_fourth">Login or Create your own account to get started!</string>
 
 </resources>
+
