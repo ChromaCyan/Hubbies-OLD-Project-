@@ -1,10 +1,11 @@
-package com.example.pchub
+package com.example.pchub.Fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.pchub.R
 
 class assemstep6 : Fragment() {
     override fun onCreateView(
