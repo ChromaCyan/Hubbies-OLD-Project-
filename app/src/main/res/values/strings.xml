@@ -35,4 +35,17 @@
     <string name="installssd2">"   For NVMe SSDs (M.2 SSDs), gently insert the NVMe SSD into the M.2 slot at a slight angle (about 30–45 degrees) and then press it down until it's seated firmly. It will fasten in place with a screw. Once the NVMe SSD is securely installed, close the case and secure it with screws."</string>
     <string name="installgpu">"   Align the graphics card with the PCIe slot. Carefully insert it into the slot. Make sure it's properly seated and that the PCIe connector at the bottom of the card fits securely into the slot. You may need to gently press down until it clicks into place. Attach the graphics card to the case using screws. The case should have corresponding holes and mounting points. Tighten the screws to secure the card in place. Be careful not to overtighten."</string>
     <string name="installgpu2">"   Ensure that the graphics card is recognized and working correctly. You can do this by checking your system information or running a graphics-intensive application or game. And congratulations, you built up your first system unit! Keep Calm and Enjoy to play the game!"</string>
+
+    \\headings for the slide screen
+    <string name="heading_one">Quick &amp; Easy Payments</string>
+    <string name="heading_two">Instant Notifications</string>
+    <string name="heading_three">Cashless Payment</string>
+    <string name="heading_fourth">Pay Anywhere</string>
+    \\Description part of the headings i think
+    <string name="desc_one">Grow your Business By Accepting Card Payments with The New Card Reader</string>
+    <string name="desc_two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="desc_three">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="desc_fourth">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+
 </resources>
+
