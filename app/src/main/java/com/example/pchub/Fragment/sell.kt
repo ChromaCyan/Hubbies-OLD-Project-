@@ -10,7 +10,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import com.example.pchub.R
 import android.app.Activity
-import com.example.pchub.data.ProductEntity
+//import com.example.pchub.data.ProductEntity
 
 
 class sell : Fragment() {
