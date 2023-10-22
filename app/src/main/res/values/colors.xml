@@ -28,4 +28,5 @@
     <color name="edit_text_border">#03a9f6</color>
     <color name="edit_text_background">#f6fbff</color>
 
+    <color name="cyan">#00FFFF</color>
 </resources>
