@@ -51,10 +51,12 @@
 
             <TextView
                 android:id="@+id/textView7"
+                style="@style/h4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Choice"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -82,6 +84,7 @@
 
             <Button
                 android:id="@+id/second_choice"
+                style="@style/h4"
                 android:layout_width="282dp"
                 android:layout_height="82dp"
                 android:backgroundTint="@color/startup_color"

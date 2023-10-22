@@ -37,15 +37,15 @@
     <string name="installgpu2">"   Ensure that the graphics card is recognized and working correctly. You can do this by checking your system information or running a graphics-intensive application or game. And congratulations, you built up your first system unit! Keep Calm and Enjoy to play the game!"</string>
 
     \\headings for the slide screen
-    <string name="heading_one">Quick &amp; Easy Payments</string>
-    <string name="heading_two">Instant Notifications</string>
-    <string name="heading_three">Cashless Payment</string>
-    <string name="heading_fourth">Pay Anywhere</string>
+    <string name="heading_one">Welcome to PCHub\nfor Dummies</string>
+    <string name="heading_two">Easy access in your pocket</string>
+    <string name="heading_three">Assembly Guides and Recommendations Computer Parts</string>
+    <string name="heading_fourth">Let\'s get started!</string>
     \\Description part of the headings i think
-    <string name="desc_one">Grow your Business By Accepting Card Payments with The New Card Reader</string>
-    <string name="desc_two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
-    <string name="desc_three">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
-    <string name="desc_fourth">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="desc_one">App that can show pc assembly guide and  recommended pc parts which you can buy on our app!</string>
+    <string name="desc_two">Convenient app that can fit in your pocket!</string>
+    <string name="desc_three">Guides and Recommendation that you can check out</string>
+    <string name="desc_fourth">Login or Create your own account to get started!</string>
 
 </resources>
 
