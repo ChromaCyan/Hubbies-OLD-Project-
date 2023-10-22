@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
+    android:background="@color/startup_color"
     tools:context="Activities.Register">
 
     <androidx.constraintlayout.widget.Guideline
@@ -137,7 +137,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
-                android:backgroundTint="@color/app_theme"
+                android:backgroundTint="@color/startup_color"
                 android:text="@string/RegButton"
                 android:textColor="@color/white"
                 android:textSize="20sp"

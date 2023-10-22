@@ -20,8 +20,16 @@ class Login : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         db = DatabaseHelper(this)
         val BackButton: FloatingActionButton = findViewById(R.id.bt_back)
+
+        BackButton.setOnClickListener {
+            val intent = Intent(this, Login::class.java)
+            startActivity(intent)
+
+        }
 
 
         binding.btSignup.setOnClickListener {
