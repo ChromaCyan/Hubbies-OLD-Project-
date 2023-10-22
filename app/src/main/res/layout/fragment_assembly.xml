@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="33dp" />
+        app:layout_constraintGuide_begin="-18dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -39,8 +39,41 @@
                 android:id="@+id/linear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_theme"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="start"
+                        android:clickable="true"
+                        android:contentDescription="Back"
+                        android:onClick="onBackPressed"
+                        android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Assembly Guide"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp">
+
+                </View>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/Guide_Title"
@@ -93,6 +126,20 @@
                     android:backgroundTint="@color/app_theme"
                     tools:ignore="TextSizeCheck">
 
+                    <ImageView
+                        android:layout_width="76dp"
+                        android:layout_height="95dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="130dp"
+                        tools:srcCompat="@drawable/img_12" />
+
+                    <ImageView
+                        android:layout_width="76dp"
+                        android:layout_height="95dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="130sp"
+                        tools:srcCompat="@drawable/img_11" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -114,6 +161,36 @@
                     android:layout_marginEnd="5dp"
                     android:backgroundTint="@color/app_theme"
                     tools:ignore="TextSizeCheck">
+
+                    <ImageView
+                        android:layout_width="133dp"
+                        android:layout_height="132dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="150dp"
+                        android:rotation="-30"
+                        android:rotationX="50"
+                        tools:srcCompat="@drawable/img_4" />
+
+                    <ImageView
+                        android:layout_width="76dp"
+                        android:layout_height="95dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="30dp"
+                        android:rotation="-30"
+                        android:rotationX="20"
+                        android:rotationY="-40"
+                        tools:srcCompat="@drawable/img_4" />
+
+                    <ImageView
+                        android:layout_width="61dp"
+                        android:layout_height="54dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="50dp"
+                        android:rotation="20"
+                        android:rotationY="50"
+                        tools:srcCompat="@drawable/img_4" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -138,12 +215,32 @@
                     tools:ignore="TextSizeCheck">
 
                     <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="133dp"
-                        android:layout_height="132dp"
-                        android:layout_marginStart="25dp"
-                        android:rotation="-40"
-                        tools:srcCompat="@drawable/img" />
+                        android:layout_width="73dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="130dp"
+                        android:layout_marginBottom="20dp"
+                        android:rotation="30"
+                        tools:srcCompat="@drawable/img_5" />
+
+                    <ImageView
+                        android:layout_width="49dp"
+                        android:layout_height="52dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="180dp"
+                        android:layout_marginTop="30dp"
+                        android:rotation="20"
+                        android:rotationX="30"
+                        tools:srcCompat="@drawable/img_5" />
+
+                    <ImageView
+                        android:layout_width="94dp"
+                        android:layout_height="78dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="150sp"
+                        android:rotation="-30"
+                        android:rotationY="-35"
+                        tools:srcCompat="@drawable/img_5" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -167,6 +264,25 @@
                     android:backgroundTint="@color/app_theme"
                     tools:ignore="TextSizeCheck">
 
+                    <ImageView
+                        android:layout_width="133dp"
+                        android:layout_height="132dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="100dp"
+                        android:rotation="-30"
+                        android:rotationX="30"
+                        android:rotationY="39"
+                        tools:srcCompat="@drawable/img" />
+
+                    <ImageView
+                        android:layout_width="133dp"
+                        android:layout_height="132dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="100dp"
+                        android:rotation="-30"
+                        android:rotationY="-40"
+                        tools:srcCompat="@drawable/img" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -188,6 +304,23 @@
                     android:layout_marginEnd="5dp"
                     android:backgroundTint="@color/app_theme"
                     tools:ignore="TextSizeCheck">
+
+                    <ImageView
+                        android:layout_width="127dp"
+                        android:layout_height="92dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="130sp"
+                        android:rotation="-30"
+                        tools:srcCompat="@drawable/img_8" />
+
+                    <ImageView
+                        android:layout_width="94dp"
+                        android:layout_height="78dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="150sp"
+                        android:rotation="-33"
+                        android:rotationY="215"
+                        tools:srcCompat="@drawable/img_7" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -211,6 +344,42 @@
                     android:backgroundTint="@color/app_theme"
                     tools:ignore="TextSizeCheck">
 
+                    <ImageView
+                        android:layout_width="104dp"
+                        android:layout_height="88dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="150sp"
+                        android:rotation="-28"
+                        android:rotationY="215"
+                        tools:srcCompat="@drawable/img_6" />
+
+                    <ImageView
+                        android:layout_width="79dp"
+                        android:layout_height="59dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="60sp"
+                        android:rotation="30"
+                        android:layout_marginBottom="12dp"
+                        tools:srcCompat="@drawable/img_6" />
+
+                    <ImageView
+                        android:layout_width="61dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="65sp"
+                        android:layout_marginTop="18dp"
+                        android:rotation="30"
+                        android:rotationY="-170"
+                        tools:srcCompat="@drawable/img_6" />
+
+                    <ImageView
+                        android:layout_width="148dp"
+                        android:layout_height="114dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="130sp"
+                        android:rotationY="-38"
+                        tools:srcCompat="@drawable/img_6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -232,6 +401,21 @@
                     android:layout_marginEnd="5dp"
                     android:backgroundTint="@color/app_theme"
                     tools:ignore="TextSizeCheck">
+
+                    <ImageView
+                        android:layout_width="126dp"
+                        android:layout_height="104dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="150sp"
+                        tools:srcCompat="@drawable/img_9" />
+
+                    <ImageView
+                        android:layout_width="159dp"
+                        android:layout_height="105dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="150sp"
+                        android:rotationY="-180"
+                        tools:srcCompat="@drawable/img_10" />
 
                     <TextView
                         android:layout_width="wrap_content"
