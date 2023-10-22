@@ -43,7 +43,7 @@ class sell : Fragment() {
 
         val price = Productprice.toDoubleOrNull() ?: 0.0
 
-        val product = ProductEntity(name= productName, price = price, description = descriptionTxt, imagePath = imagePath)
+        //val product = ProductEntity(name= productName, price = price, description = descriptionTxt, imagePath = imagePath)
 
 
     }
