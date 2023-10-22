@@ -75,7 +75,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="215sp"
-                    android:src="@drawable/VS"/>
+                    android:src="@drawable/vs"/>
 
         </androidx.cardview.widget.CardView>
 
@@ -96,7 +96,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:text="@string/cpu_recommendation1"
+                android:text="@string/installcpu"
                 android:textColor="@color/black"
                 android:textSize="19sp" />
 
