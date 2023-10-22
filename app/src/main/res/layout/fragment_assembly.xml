@@ -67,6 +67,7 @@
                         android:text="Assembly Guide"
                         android:textColor="@color/white"
                         android:textSize="20sp" />
+                    <!-- this a bruh momento-->
                 </LinearLayout>
 
                 <View
