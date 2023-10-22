@@ -23,11 +23,7 @@ class Login : AppCompatActivity() {
         db = DatabaseHelper(this)
         val BackButton: FloatingActionButton = findViewById(R.id.bt_back)
 
-        BackButton.setOnClickListener {
-            val intent = Intent(this, Startup::class.java)
-            startActivity(intent)
 
-        }
         binding.btSignup.setOnClickListener {
             val intent = Intent(this, Register::class.java)
             startActivity(intent)

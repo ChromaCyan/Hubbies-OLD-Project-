@@ -33,14 +33,12 @@ class sell : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Initialize your UI elements
         productNameEditText = view.findViewById(R.id.SellerProductName)
         productPriceEditText = view.findViewById(R.id.SellerProductPrice)
         productDescriptionEditText = view.findViewById(R.id.SellerProductDescription)
         addImageButton = view.findViewById(R.id.addImageButton)
         sellButton = view.findViewById(R.id.sellbutton)
 
-        // Set a click listener for the "Add Image" button
         addImageButton.setOnClickListener {
             val imagePickerIntent = Intent(Intent.ACTION_PICK)
             imagePickerIntent.type = "image/*"
@@ -52,32 +50,34 @@ class sell : Fragment() {
             val productPrice = productPriceEditText.text.toString()
             val productDescription = productDescriptionEditText.text.toString()
 
-            val product = Product(0, productName, productPrice, productDescription, imageUri.toString())
+            if (productName.isBlank() || productPrice.isBlank() || productDescription.isBlank()) {
+                showToast("Please fill in all fields.")
+            } else {
+                val product = Product(0, productName, productPrice, productDescription, imageUri.toString())
 
-            // Use a Thread to perform the database operation on a background thread
-            Thread {
-                val productDao = appDatabase.productDao()
-                productDao.insertProduct(product)
+                Thread {
+                    val productDao = appDatabase.productDao()
+                    productDao.insertProduct(product)
 
-                val existingProduct = productDao.getAllProducts(productName)
+                    val existingProduct = productDao.getAllProducts(productName)
 
-                // Update the UI on the main thread
-                requireActivity().runOnUiThread {
-                    if (existingProduct != null) {
-                        showToast("Data saved successfully!")
-                        // Clear the input fields and image path if needed
-                        productNameEditText.text.clear()
-                        productPriceEditText.text.clear()
-                        productDescriptionEditText.text.clear()
-                        imageUri = null
-                    } else {
-                        showToast("Failed to save data. Product does not exist in the database.")
+                    requireActivity().runOnUiThread {
+                        if (existingProduct != null) {
+                            showToast("Data saved successfully!")
+
+                            productNameEditText.text.clear()
+                            productPriceEditText.text.clear()
+                            productDescriptionEditText.text.clear()
+                            imageUri = null
+                        } else {
+                            showToast("Failed to save data. Product does not exist in the database.")
+                        }
                     }
-                }
-            }.start()
+                }.start()
+            }
         }
 
-        // Initialize your Room database
+
         appDatabase = AppDatabase.getInstance(requireContext())
     }
 
@@ -91,8 +91,7 @@ class sell : Fragment() {
             imageUri = selectedImageUri // Store the selected image URI
 
             addImageButton.text = "Image Added!"
-            // You can also display the selected image here if needed
-            // Glide.with(this).load(selectedImageUri).into(yourImageView)
+
         }
     }
 

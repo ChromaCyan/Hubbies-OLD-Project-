@@ -1,4 +1,4 @@
-package com.example.onboarding
+package com.example.pchub.Activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.example.pchub.Activities.ViewPageAdapter
 import com.example.pchub.R
-import com.example.pchub.viewmodel.mainscreen
+import com.example.pchub.Activities.Login
 
 class Startup : AppCompatActivity() {
 
@@ -32,6 +32,7 @@ class Startup : AppCompatActivity() {
         skipBtn = findViewById(R.id.skipButton)
         mSlideViewPager = findViewById(R.id.slideViewPager)
 
+        mDotLayout = findViewById(R.id.indicator_layout)
 
         backBtn.setOnClickListener {
             if (getItem(0) > 0) {
@@ -43,14 +44,14 @@ class Startup : AppCompatActivity() {
             if (getItem(0) < 3) {
                 mSlideViewPager.setCurrentItem(getItem(1), true)
             } else {
-                val intent = Intent(this, mainscreen::class.java)
+                val intent = Intent(this, Login::class.java)
                 startActivity(intent)
                 finish()
             }
         }
 
         skipBtn.setOnClickListener {
-            val intent = Intent(this, mainscreen::class.java)
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
             finish()
         }

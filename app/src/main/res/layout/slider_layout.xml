@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:fontFamily="@font/poppins_bold"
+        android:fontFamily="@font/poppins_thin"
         android:text="Quick &amp; Easy Payments"
         android:textAlignment="center"
         android:textSize="30dp" />
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
-        android:fontFamily="@font/poppins_bold"
+        android:fontFamily="@font/poppins_thin"
         android:text="Grow you PC Building Knowledge"
         android:textAlignment="center"
         android:textSize="20dp"/>
