@@ -9,10 +9,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.ImageView
 import com.example.pchub.R
 import android.widget.Button
+import android.widget.Spinner
 import com.example.pchub.dao.Product
 import android.widget.Toast
 import kotlinx.coroutines.Dispatchers
@@ -29,6 +32,7 @@ class sell : Fragment() {
     private var imageUri: Uri? = null
     private lateinit var appDatabase: AppDatabase
     private lateinit var sellButton: Button
+    //private lateinit var categorySpinner: Spinner
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -38,17 +42,27 @@ class sell : Fragment() {
         productDescriptionEditText = view.findViewById(R.id.SellerProductDescription)
         addImageButton = view.findViewById(R.id.addImageButton)
         sellButton = view.findViewById(R.id.sellbutton)
+        //categorySpinner = view.findViewById(R.id.categorySpinner)
+
+
+
+
+
 
         addImageButton.setOnClickListener {
             val imagePickerIntent = Intent(Intent.ACTION_PICK)
             imagePickerIntent.type = "image/*"
             startActivityForResult(imagePickerIntent, IMAGE_PICKER_REQUEST_CODE)
+
         }
+
 
         sellButton.setOnClickListener {
             val productName = productNameEditText.text.toString()
             val productPrice = productPriceEditText.text.toString()
             val productDescription = productDescriptionEditText.text.toString()
+
+
 
             if (productName.isBlank() || productPrice.isBlank() || productDescription.isBlank()) {
                 showToast("Please fill in all fields.")
@@ -80,6 +94,8 @@ class sell : Fragment() {
 
         appDatabase = AppDatabase.getInstance(requireContext())
     }
+
+
 
     private fun showToast(message: String) {
         Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()

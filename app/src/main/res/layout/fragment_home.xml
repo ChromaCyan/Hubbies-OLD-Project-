@@ -69,12 +69,10 @@
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/shape_square_teal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <ImageView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Placeholder Carrousel View/ Slideshow"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
+                    android:src="@drawable/badass"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

@@ -13,7 +13,6 @@ import com.example.pchub.data.PcBundle
 class CpuAdapter(private val cpuproducts: List<CpuBundle>) : RecyclerView.Adapter<CpuAdapter.MyViewHolder>() {
 
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.cpuproducts, parent, false)
         return MyViewHolder(view)

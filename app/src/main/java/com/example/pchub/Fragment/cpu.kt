@@ -6,10 +6,21 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.pchub.Adapters.CpufragAdapter
+import com.example.pchub.Adapters.PCBundleAdapter
 import com.example.pchub.R
+import com.example.pchub.dao.Product
+import com.example.pchub.dao.ProductDao
+import com.example.pchub.data.CpuBundle
+import com.example.pchub.data.CpufragBundle
+import com.example.pchub.data.PcBundle
 
 class cpu : Fragment() {
 
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: CpufragBundle
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -20,6 +31,7 @@ class cpu : Fragment() {
             requireActivity().supportFragmentManager.popBackStack()
         }
     }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

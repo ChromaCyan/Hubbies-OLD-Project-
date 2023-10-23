@@ -12,5 +12,4 @@ interface ProductDao {
 
     @Query("SELECT * FROM products WHERE productName = :name")
     fun getAllProducts(name: String): List<Product>
-
 }
