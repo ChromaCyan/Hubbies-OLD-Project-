@@ -22,7 +22,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/cyan"
+        android:background="@color/startup_color"
         android:orientation="horizontal"
         android:padding="12dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,8 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:text="Recommendations"
+            android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -79,7 +80,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="70dp"
                     android:backgroundTint="@color/white"
                     tools:ignore="TextSizeCheck">
 
@@ -88,9 +89,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textAlignment="center"
                         android:text="Recommendation Guide"
                         android:textColor="@color/black"
-                        android:textSize="32sp"
+                        android:textSize="28sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -112,8 +116,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         style="@style/h3"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginEnd="7dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
                         android:text="@string/recommendation"
                         android:textAlignment="center"
                         android:textColor="@color/black"
@@ -134,7 +138,7 @@
                     android:layout_height="78dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
-                    android:backgroundTint="@color/g_dark_blue"
+                    android:backgroundTint="@color/startup_color"
                     tools:ignore="TextSizeCheck">
 
                     <TextView
@@ -162,7 +166,7 @@
                     android:layout_height="78dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
-                    android:backgroundTint="@color/g_dark_blue"
+                    android:backgroundTint="@color/startup_color"
                     tools:ignore="TextSizeCheck">
 
                     <TextView
@@ -192,7 +196,7 @@
                     android:layout_height="78dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
-                    android:backgroundTint="@color/g_dark_blue"
+                    android:backgroundTint="@color/startup_color"
                     tools:ignore="TextSizeCheck">
 
                     <TextView
@@ -222,7 +226,7 @@
                     android:layout_height="78dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
-                    android:backgroundTint="@color/g_dark_blue"
+                    android:backgroundTint="@color/startup_color"
                     tools:ignore="TextSizeCheck">
 
                     <TextView
@@ -250,7 +254,7 @@
                     android:layout_height="78dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
-                    android:backgroundTint="@color/g_dark_blue"
+                    android:backgroundTint="@color/startup_color"
                     tools:ignore="TextSizeCheck">
 
                     <TextView
@@ -280,7 +284,7 @@
                     android:layout_height="78dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
-                    android:backgroundTint="@color/g_dark_blue"
+                    android:backgroundTint="@color/startup_color"
                     tools:ignore="TextSizeCheck">
 
                     <TextView
@@ -309,7 +313,7 @@
                     android:layout_height="78dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
-                    android:backgroundTint="@color/g_dark_blue"
+                    android:backgroundTint="@color/startup_color"
                     tools:ignore="TextSizeCheck">
 
                     <TextView
