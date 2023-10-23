@@ -17,12 +17,6 @@ class GuideFragment : Fragment() {
         val assem: Button = view.findViewById(R.id.first_choice)
         val recommend: Button = view.findViewById(R.id.second_choice)
 
-        val backbutton: ImageView = view.findViewById(R.id.back)
-
-        backbutton.setOnClickListener {
-            requireActivity().supportFragmentManager.popBackStack()
-        }
-
         assem.setOnClickListener{
             val transaction = requireActivity().supportFragmentManager.beginTransaction()
             transaction.replace(

@@ -14,7 +14,7 @@
         android:background="@drawable/shape_square_teal">
 
         <ImageView
-            android:id="@+id/imagecpu"
+            android:id="@+id/imagemotherboard"
             android:layout_width="80dp"
             android:layout_height="match_parent"
             android:src="@drawable/graphicscard"
@@ -22,17 +22,19 @@
             app:layout_constraintStart_toStartOf="parent"></ImageView>
 
         <TextView
-            android:id="@+id/productNameTextView2"
+            android:id="@+id/productNameTextView3"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="CPU"
             android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="CPU"
             android:textColor="@color/black"
-            app:layout_constraintStart_toEndOf="@+id/imagecpu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagemotherboard"
             app:layout_constraintTop_toTopOf="parent"></TextView>
 
         <TextView
-            android:id="@+id/descriptionTextView2"
+            android:id="@+id/descriptionTextView3"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
@@ -42,8 +44,8 @@
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imagecpu"
-            app:layout_constraintTop_toBottomOf="@+id/productNameTextView2"></TextView>
+            app:layout_constraintStart_toEndOf="@+id/imagemotherboard"
+            app:layout_constraintTop_toBottomOf="@+id/productNameTextView3"></TextView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

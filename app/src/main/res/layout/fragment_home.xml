@@ -320,7 +320,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Check Our Recommended Packages and Deals"
+                android:text="Check Our Recommended"
                 android:textAlignment="center"
                 android:textSize="30sp"
                 style="@style/h4"
@@ -349,16 +349,6 @@
                 android:layout_marginStart="80dp">
             </TextView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="see all"
-                android:textSize="15sp"
-                android:textColor="@color/app_theme"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
-                style="@style/h3">
-            </TextView>
         </LinearLayout>
 
         <LinearLayout
@@ -390,16 +380,6 @@
                 android:layout_marginStart="80dp">
             </TextView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="see all"
-                android:textSize="15sp"
-                android:textColor="@color/app_theme"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
-                style="@style/h3">
-            </TextView>
         </LinearLayout>
 
         <LinearLayout
@@ -409,6 +389,38 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/Cpuproducts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Recommended Motherboard"
+                android:textSize="25sp"
+                style="@style/h3"
+                android:layout_gravity="center">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/motheroardproducts"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 

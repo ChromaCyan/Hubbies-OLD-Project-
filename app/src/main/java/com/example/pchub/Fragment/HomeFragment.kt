@@ -21,14 +21,11 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         super.onViewCreated(view, savedInstanceState)
 
         val pcBundlesList = listOf(
-            PcBundle("Gaming Beast RTX", "Description 1", R.drawable.pc1),
-            PcBundle("Ultra High Specs", "Description 2", R.drawable.pc1),
-
-
+            PcBundle("Corsair Ultra MX", "For high-end gaming and workstations", R.drawable.systemunit),
+            PcBundle("MSI Core i5", "Mid-ranged bundle and beginner friendly to build", R.drawable.pc1)
         )
         recyclerView = view.findViewById(R.id.PCBundles)
 
-        val pc: ImageView = view.findViewById(R.id.cpu)
         recyclerView = view.findViewById(R.id.PCBundles)
         adapter = PCBundleAdapter(pcBundlesList)
 
@@ -36,15 +33,30 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         recyclerView.adapter = adapter
 
         val cpuproductsList = listOf(
-            PcBundle("Cpu 1", "Description 1", R.drawable.cpu),
-            PcBundle("Cpu 2", "Description 2", R.drawable.cpu),
+            PcBundle("Ryzen 5", "For high end gamers", R.drawable.apu),
+            PcBundle("Intel i5", "For midrange budget", R.drawable.installcpu),
+        )
+
+        recyclerView = view.findViewById(R.id.motheroardproducts)
+
+        val cpu : ImageView = view.findViewById(R.id.cpu
+        )
+        recyclerView = view.findViewById(R.id.Cpuproducts)
+        adapter = PCBundleAdapter(cpuproductsList)
+
+        recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        recyclerView.adapter = adapter
+
+        val motherboardproductslist = listOf(
+            PcBundle("Aorus B460", "High-end gaming motherboard", R.drawable.b460),
+            PcBundle("Aorus B450", "For midrange budget", R.drawable.b450),
         )
 
         recyclerView = view.findViewById(R.id.PCBundles)
 
-        val cpu: ImageView = view.findViewById(R.id.graphics)
-        recyclerView = view.findViewById(R.id.Cpuproducts)
-        adapter = PCBundleAdapter(cpuproductsList)
+
+        recyclerView = view.findViewById(R.id.motheroardproducts)
+        adapter = PCBundleAdapter(motherboardproductslist)
 
         recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         recyclerView.adapter = adapter

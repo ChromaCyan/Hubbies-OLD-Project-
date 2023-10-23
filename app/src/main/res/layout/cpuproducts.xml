@@ -25,9 +25,11 @@
             android:id="@+id/productNameTextView2"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="CPU"
             android:layout_marginTop="20dp"
+            android:text="CPU"
+            android:textStyle="bold"
             android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imagecpu"
             app:layout_constraintTop_toTopOf="parent"></TextView>
 
