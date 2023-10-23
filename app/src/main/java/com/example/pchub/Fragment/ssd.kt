@@ -6,10 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.pchub.Adapters.CpufragAdapter
+import com.example.pchub.Adapters.PCBundleAdapter
+import com.example.pchub.Adapters.SsdfragAdapter
 import com.example.pchub.R
+import com.example.pchub.data.PcBundle
 
 
 class ssd : Fragment() {
+
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: SsdfragAdapter
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -20,6 +29,20 @@ class ssd : Fragment() {
             // Pop the back stack to navigate back to the HomeFragment
             requireActivity().supportFragmentManager.popBackStack()
         }
+        /*
+        val SSDList = listOf(
+            PcBundle("Corsair Ultra MX", "For high-end gaming and workstations", R.drawable.systemunit),
+            PcBundle("MSI Core i5", "Mid-ranged bundle and beginner friendly to build", R.drawable.pc1)
+        )
+        recyclerView = view.findViewById(R.id.ssd)
+
+        recyclerView = view.findViewById(R.id.PCBundles)
+
+        adapter = SsdfragAdapter(SSDList)
+
+        recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+        recyclerView.adapter = adapter
+         */
     }
 
     override fun onCreateView(
