@@ -44,10 +44,11 @@ class sell : Fragment() {
         sellButton = view.findViewById(R.id.sellbutton)
         //categorySpinner = view.findViewById(R.id.categorySpinner)
 
+        val backbutton: ImageView = view.findViewById(R.id.back)
 
-
-
-
+        backbutton.setOnClickListener {
+            requireActivity().supportFragmentManager.popBackStack()
+        }
 
         addImageButton.setOnClickListener {
             val imagePickerIntent = Intent(Intent.ACTION_PICK)

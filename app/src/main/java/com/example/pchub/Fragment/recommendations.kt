@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.cardview.widget.CardView
 import com.example.pchub.R
 
@@ -19,6 +20,12 @@ class recommendations : Fragment() {
         val step5: CardView = view.findViewById(R.id.Step5_CardView)
         val step6: CardView = view.findViewById(R.id.Step6_CardView)
         val step7: CardView = view.findViewById(R.id.Step7_CardView)
+
+        val backbutton: ImageView = view.findViewById(R.id.back)
+
+        backbutton.setOnClickListener {
+            requireActivity().supportFragmentManager.popBackStack()
+        }
 
         step1.setOnClickListener{
             val transaction = requireActivity().supportFragmentManager.beginTransaction()
