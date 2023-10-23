@@ -31,4 +31,5 @@
     <color name="buttontext">#50C2C9</color>
     <color name="inactive">#C4C4C4</color>
     <color name="active">#50C2C9</color>
+    <color name="cyan">#00FFFF</color>
 </resources>

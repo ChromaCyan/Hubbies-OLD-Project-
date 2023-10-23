@@ -47,5 +47,42 @@
     <string name="desc_three">Guides and Recommendation that you can check out</string>
     <string name="desc_fourth">Login or Create your own account to get started!</string>
 
+    <string name="recommendation">" Here is where we will give you guidance in choosing parts for your PC build and give you some of out recommendation parts and why do we recommend them.</string>
+    <string name="cpu">Should you pick AMD or Intel</string>
+    <string name="motherboard">What type of motherboard should you pick?</string>
+    <string name="graphics">What to know about graphics cards and should you buy one?</string>
+    <string name="psu">Pick the correct Power Supply Unit.</string>
+    <string name="ssd">Type of SSD and which one should you buy?</string>
+    <string name="ram">How many capacity and Hz of RAM should you pick?</string>
+    <string name="pc_case">What casing and what size suites your taste?</string>
+
+    <string name="cpu_description1">"   AMD vs Intel. One of the most controversial battles between manufacturers of CPU."</string>
+    <string name="cpu_description2">"   But which manufacturer offers better quality, performance, features and price? Let this guide break it down for you."</string>
+    <string name="cpu_description3">"   To make things short and simple, both manufacturer's products may vary depending on their offered features and what suits your preference."</string>
+    <string name="cpu_description4">"   To see their difference, if you are building a PC where you can play light games on it or doing heavy multitasking workloads, and consumes less power, then AMD is the choice for you. Which is why majority of consumers use AMD because it is cheaper and meets the consumer's common level of standards."</string>
+    <string name="cpu_description5">"   And if you are looking for a CPU for your PC build where you can play and run high-frequency games and video applications. Intel would be a better choice for you because they have more cores and faster memory access speeds than their AMD counterparts. "</string>
+    <string name="cpu_description6">"After picking a side, you must consider these things before buying a CPU:
+        \nCompatibility with Motherboard - Ensure that the CPU you are considering is compatible with your motherboard's.
+        \nPerformance - Consider the CPU's performance in terms of clock speed (GHz), the number of cores, and the number of threads.
+        \nIntended Use - If you're building a gaming PC, look for a CPU with strong single-core performance. For content creation or multitasking, consider CPUs with more cores and threads.
+        \nBudget - While there are high-end CPUs with cutting-edge features, there are also budget-friendly options that can provide good performance for everyday tasks.
+        \nCooling Requirements - Some CPUs come with a stock cooler or an aftermarket cooler.
+        \nOverclocking - This is optional. If you're interested in overclocking or maximizing your CPU for additional performance, look for an unlocked CPU (often denoted with a "K" for Intel or "X" for AMD) and ensure your motherboard supports overclocking.
+        \nTDP (Thermal Design Power) - Check the TDP of the CPU to make sure it's within the thermal limits your cooling solution and motherboard can handle.
+        \nReviews and Benchmarks - Read reviews and look for benchmark and some Real-World performance tests results for the specific CPU models you're interested in.
+        \nPower Efficiency - If energy efficiency is important to you, look for CPUs with low power consumption.
+        \nIntegrated Graphics - Some CPUs come with integrated graphics, which can be handy if you don't plan to use a dedicated graphics card
+        \nUpgrade Path - Consider whether the CPU you're buying allows for future upgrades on the same motherboard, as this can save you money in the long run."
+    </string>
+    <string name="cpu_description7">"   So have you decided what CPU are you going to pick?"</string>
+    <string name="cpu_description8">"  Is it gonna be an AMD or an Intel? Check out our shop for some <packages class=""></packages>"</string>
+
+    <string name="motherboard_description1"></string>
+    <string name="graphics_description1"></string>
+    <string name="psu_description1"></string>
+    <string name="ssd_description1"></string>
+    <string name="ram_description1"></string>
+    <string name="pc_case_description1"></string>
+
 </resources>
 
