@@ -68,8 +68,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
                 android:text="@string/cpu_description1"
                 android:textColor="@color/black"
                 android:textSize="19sp" />
@@ -89,7 +89,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="215sp"
-                android:src="@drawable/VS"/>
+                android:src="@drawable/vs"/>
 
         </androidx.cardview.widget.CardView>
 
@@ -108,8 +108,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
                 android:text="@string/cpu_description2"
                 android:textColor="@color/black"
                 android:textSize="19sp" />
@@ -148,8 +148,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
                 android:text="@string/cpu_description3"
                 android:textColor="@color/black"
                 android:textSize="19sp" />
@@ -188,8 +188,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
                 android:text="@string/cpu_description4"
                 android:textColor="@color/black"
                 android:textSize="19sp" />
@@ -211,8 +211,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
                 android:text="@string/cpu_description5"
                 android:textColor="@color/black"
                 android:textSize="19sp" />
@@ -234,8 +234,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
                 android:text="@string/cpu_description6"
                 android:textColor="@color/black"
                 android:textSize="19sp" />
@@ -257,13 +257,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
                 android:text="@string/cpu_description7"
                 android:textColor="@color/black"
                 android:textSize="19sp" />
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </View>
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -276,6 +282,12 @@
 
         </androidx.cardview.widget.CardView>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </View>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -285,8 +297,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
                 android:text="@string/cpu_description8"
                 android:textColor="@color/black"
                 android:textSize="19sp" />

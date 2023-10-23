@@ -28,16 +28,13 @@
                 android:onClick="onBackPressed"
                 android:src="@drawable/baseline_arrow_back_ios_new_24" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Step 1"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </View>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Preparation"
+                android:text="What type of Motherboard should you pick?"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="50sp"
@@ -67,13 +64,15 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageView
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
-                android:src="@drawable/preparation" />
+                android:text="@string/motherboard_description1"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
 
         </LinearLayout>
 
@@ -83,22 +82,16 @@
 
         </View>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
-                android:text="@string/description"
-                android:textColor="@color/black"
-                android:textSize="19sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="215sp"
+                android:src="@drawable/difference"/>
 
-        </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
         <View
             android:layout_width="match_parent"
@@ -115,14 +108,113 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
-                android:text="@string/description2"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/motherboard_description2"
                 android:textColor="@color/black"
                 android:textSize="19sp" />
 
         </LinearLayout>
-    </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        </View>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="215sp"
+                android:src="@drawable/b450" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/motherboard_description3"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </View>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="215sp"
+                android:src="@drawable/b460" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/motherboard_description4"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/cyan">
+
+        </View>
+
+    </LinearLayout>
 
 </ScrollView>

@@ -113,7 +113,29 @@
     <fragment
         android:id="@+id/recommendations"
         android:name="com.example.pchub.Fragment.recommendations"
-        android:label="recommendations" />
+        android:label="recommendations" >
+        <action
+            android:id="@+id/action_recommendations_to_recommend_button1"
+            app:destination="@id/recommend_button1" />
+        <action
+            android:id="@+id/action_recommendations_to_recommend_button2"
+            app:destination="@id/recommend_button2" />
+        <action
+            android:id="@+id/action_recommendations_to_recommend_button3"
+            app:destination="@id/recommend_button3" />
+        <action
+            android:id="@+id/action_recommendations_to_recommend_button4"
+            app:destination="@id/recommend_button4" />
+        <action
+            android:id="@+id/action_recommendations_to_recommend_button5"
+            app:destination="@id/recommend_button5" />
+        <action
+            android:id="@+id/action_recommendations_to_recommend_button6"
+            app:destination="@id/recommend_button6" />
+        <action
+            android:id="@+id/action_recommendations_to_recommend_button7"
+            app:destination="@id/recommend_button7" />
+    </fragment>
     <fragment
         android:id="@+id/assemstep1"
         android:name="com.example.pchub.Fragment.assemstep1"
@@ -142,4 +164,32 @@
         android:id="@+id/assemstep7"
         android:name="com.example.pchub.Fragment.assemstep7"
         android:label="assemstep7" />
+    <fragment
+        android:id="@+id/recommend_button1"
+        android:name="com.example.pchub.Fragment.recommend_button1"
+        android:label="recommend_button1" />
+    <fragment
+        android:id="@+id/recommend_button2"
+        android:name="com.example.pchub.Fragment.recommend_button2"
+        android:label="recommend_button2" />
+    <fragment
+        android:id="@+id/recommend_button3"
+        android:name="com.example.pchub.Fragment.recommend_button3"
+        android:label="recommend_button3" />
+    <fragment
+        android:id="@+id/recommend_button4"
+        android:name="com.example.pchub.Fragment.recommend_button4"
+        android:label="recommend_button4" />
+    <fragment
+        android:id="@+id/recommend_button5"
+        android:name="com.example.pchub.Fragment.recommend_button5"
+        android:label="recommend_button5" />
+    <fragment
+        android:id="@+id/recommend_button6"
+        android:name="com.example.pchub.Fragment.recommend_button6"
+        android:label="recommend_button6" />
+    <fragment
+        android:id="@+id/recommend_button7"
+        android:name="com.example.pchub.Fragment.recommend_button7"
+        android:label="recommend_button7" />
 </navigation>

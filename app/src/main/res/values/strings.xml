@@ -1,4 +1,5 @@
 <resources>
+    \\login string
     <string name="app_name">PCHUB</string>
     <string name="PCHub1">PCHub\nFor\nDummies</string>
     <string name="Welcome">"Welcome to \n PCHub for Dummies \n Placeholder startup"</string>
@@ -12,6 +13,7 @@
     <string name="RegButton">Register</string>
     <string name="Choice">What do you want to do?</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    \\guides string
     <string name="Welcome_Intro">Welcome to the guiding window where we have provided you a step-by-step tutorial oh building a PC.</string>
     <string name="Welcome_Intro2">Welcome to the guiding window where we have provided you a step-by-step tutorial on choosing a PC parts.</string>
     <string name="step_1">Step 1\n(Preparation)</string>
@@ -48,7 +50,7 @@
     <string name="desc_fourth">Login or Create your own account to get started!</string>
 
     <string name="recommendation">" Here is where we will give you guidance in choosing parts for your PC build and give you some of out recommendation parts and why do we recommend them.</string>
-    <string name="cpu">Should you pick AMD or Intel</string>
+    <string name="cpu">Should you pick AMD or Intel?</string>
     <string name="motherboard">What type of motherboard should you pick?</string>
     <string name="graphics">What to know about graphics cards and should you buy one?</string>
     <string name="psu">Pick the correct Power Supply Unit.</string>
@@ -77,11 +79,39 @@
     <string name="cpu_description7">"   So have you decided what CPU are you going to pick?"</string>
     <string name="cpu_description8">"  Is it gonna be an AMD or an Intel? Check out our shop for some <packages class=""></packages>"</string>
 
-    <string name="motherboard_description1"></string>
-    <string name="graphics_description1"></string>
-    <string name="psu_description1"></string>
-    <string name="ssd_description1"></string>
-    <string name="ram_description1"></string>
-    <string name="pc_case_description1"></string>
+    <string name="motherboard_description1">"    AMD and Intel have different Motherboards. So better know the difference of the looks of their motherboards"</string>
+    <string name="motherboard_description2">"    If your cpu is AMD, We would recommend the B450. It is one of the budget motherboards of AMD."</string>
+    <string name="motherboard_description3">"    If your cpu is Intel, We would recommend the B460. It is one of the budget motherboards of Intel."</string>
+    <string name="motherboard_description4">"    When comparing Intel and AMD motherboards, it's important to consider several factors to determine which one is right for your needs. Both Intel and AMD have their own CPU architectures, and motherboards are designed to be compatible with their respective processors."</string>
+
+
+
+    <string name="graphics_description1">"    Depends on the CPU, if you buy an APU such as 5600g, then you may not need GPU to run the PC."</string>
+    <string name="graphics_description2">"    You may buy a GPU if your CPU does not have APU. Otherwise, GPU may be optional depends on the setup of your unit."</string>
+    <string name="graphics_description3">"    If your budget is low, we would recommend RTX 3050 if your choice is NVidia GPU. And Radeon RX 6500XT if your choice is AMD GPU."</string>
+
+
+    <string name="psu_description1">"    Choosing the right power supply unit (PSU) for your computer is crucial, as it directly impacts system stability and longevity."</string>
+    <string name="psu_description2">"    PSU is one of the most important part to know if it is trusted or not. Some 80+ certified are not trusted. Might be 650w but in reality, it is only 300-400w because it is generic."</string>
+    <string name="psu_description3">"    Most people have trust issues about choosing the PSU. Sometimes it is really hard if the PSU is branded or just a new brand. We might not know if it is really True Rated or not."</string>
+    <string name="psu_description4">"    In summary, while generic PSUs may be more affordable upfront, they come with significant risks and drawbacks related to quality, safety, and performance. True-rated PSUs, on the other hand, offer higher quality, accuracy, efficiency, and safety features, making them a much better choice for powering your computer and protecting your components. In the long term, investing in a true-rated PSU is a wise decision, as it helps ensure system stability and reduce the risk of damage or failure."</string>
+
+
+
+    <string name="ssd_description1">"    There are two primary types of SSDs (Solid State Drives): SATA SSDs and NVMe SSDs. The choice of which one to buy depends on your specific needs and the capabilities of your system"</string>
+    <string name="ssd_description2">"    A SATA SSD is a type of storage device that uses the SATA (Serial Advanced Technology Attachment) interface to connect to a computer's motherboard. It is a popular and widely used type of SSD due to its compatibility and significant performance improvement over traditional hard disk drives (HDDs)."</string>
+    <string name="ssd_description3">"    NVMe SSD, or Non-Volatile Memory Express Solid State Drive, is a type of high-performance storage device that uses the NVMe protocol to connect to a computer's motherboard. NVMe SSDs offer significant advantages in terms of speed and efficiency compared to traditional SATA SSDs and HDDs"</string>"
+
+
+    <string name="ram_description1">"    Choosing the right RAM (Random Access Memory) for your computer is an essential part of building or upgrading a system. RAM affects your computer's overall performance and multitasking capabilities."</string>
+    <string name="ram_description2">"    The more hz, the more better. Higher frequency is better for RAM because of your performance while multitasking."</string>
+    <string name="ram_description3">"    RAM also has DDR3, DDR4 and DDR5 slots. DDR3 is for the older version of the motherboard. DDR4 is for budget motherboards. And DDR5 is for the latest variant motherboards."</string>
+    <string name="ram_description4">"    Choosing the right RAM involves understanding your system's requirements, considering RAM type, capacity, speed, latency, brand, and aesthetics, as well as assessing any future expansion needs. Always verify compatibility with your motherboard and CPU before purchasing RAM, and consider your usage scenario to ensure you get the performance you need."</string>
+
+
+    <string name="pc_case_description1">"    Determine the case size and form factor that matches your components and workspace. Common form factors include ATX, Micro ATX, Mini-ITX, and E-ATX. Ensure the case can accommodate your motherboard and other components."</string>
+    <string name="pc_case_description2">"    Consider the case's cooling capabilities. Look for cases with good airflow, fan mounts, and support for liquid cooling if you plan to use it. Adequate cooling helps maintain component temperatures and prevents overheating."</string>
+    <string name="pc_case_description3">"    Look for cases with cable management features like routing channels, cable tie-down points, and ample space behind the motherboard tray. Well-organized cables improve airflow and aesthetics."</string>
+    <string name="pc_case_description4">"    Choosing the right system unit case involves considering factors like size, cooling, drive bays, expansion slots, build quality, noise reduction, aesthetics, and budget. Prioritize your specific needs and preferences to find a case that suits your build and helps create an efficient, aesthetically pleasing, and well-ventilated computer system."</string>
 
 </resources>
